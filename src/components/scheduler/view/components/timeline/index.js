@@ -5,7 +5,6 @@ import Styles from "./timeline.module.scss";
 const Timeline = (props) => {
   return (
     <div className={Styles.timeline}>
-      Time line goes here...
       <DaysDirectory />
     </div>
   );
