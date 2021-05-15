@@ -22,6 +22,10 @@ const DaysDirectory = (props) => {
   const Days = () => {
     let jsxArray = [];
     for (let dayDate in days) {
+      if (dayDate == "1") {
+        jsxArray.push(<Day date={days[dayDate]} numOfJobTasks={1} />);
+        continue;
+      }
       jsxArray.push(<Day date={days[dayDate]} />);
     }
     return jsxArray;

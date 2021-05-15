@@ -68,7 +68,8 @@ const UnScheduledJob = ({
             {jobDurationQuantitiy} {jobDurationWeight}
           </div>
           <div className={Styles.unscheduled__bottom__customername}>
-            <span>{customerFName}</span> <span>{customerLName}</span>
+            <span>►</span> <span>{customerFName}</span>{" "}
+            <span>{customerLName}</span>
           </div>
         </div>
       </div>

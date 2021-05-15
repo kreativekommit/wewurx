@@ -21,7 +21,6 @@ const JobItem = ({
   jobID,
 }) => {
   const [isChecked, setIsChecked] = useState(false);
-  console.log(status);
   return (
     <div className={Styles.job}>
       <Field
