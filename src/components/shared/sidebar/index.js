@@ -5,6 +5,7 @@ import { NavLink as Link } from "react-router-dom";
 const SideBar = (props) => {
   return (
     <aside className={`${Styles.sidebar}`}>
+    {/*change we font*/}
       <span className={`${Styles.sidebar__we}`}>we</span>
       <ul className={`${Styles.sidebar__links} list-unstyled`}>
         <li>
