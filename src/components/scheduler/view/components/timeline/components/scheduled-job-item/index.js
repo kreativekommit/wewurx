@@ -3,7 +3,7 @@ import CustomerInfo from "./components/customerinfo";
 import JobInfo from "./components/jobinfo";
 import Styles from "./scheduled-job-item.module.scss";
 
-const ScheduledJobItem = (props) => {
+const ScheduledJobItem = ({ date }) => {
   const renderEllipsis = () => {
     const ellipsisJsx = [];
     for (let i = 0; i < 3; i++) {
@@ -18,7 +18,7 @@ const ScheduledJobItem = (props) => {
         {renderEllipsis()}
       </div>
       <div className={Styles.job__main}>
-        <JobInfo />
+        <JobInfo date={date} />
         <CustomerInfo />
       </div>
       <div className={`${Styles.job__resizeEnd} ${Styles.job__resize}`}>

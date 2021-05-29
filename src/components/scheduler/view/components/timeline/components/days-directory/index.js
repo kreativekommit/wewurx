@@ -6,6 +6,7 @@ import Day from "../day";
 import Styles from "./days-directory.module.scss";
 
 const DaysDirectory = (props) => {
+  console.log("from days directory");
   const [numberOfDays, setNumberOfDays] = useState(5);
   let firstDay = new Date();
   const [days, setDays] = useState({ 0: new Date() });
