@@ -3,7 +3,7 @@ import DayHeader from "../day-header";
 import ScheduledJobItem from "../scheduled-job-item";
 import Styles from "./day.module.scss";
 
-const Day = ({ date, numOfJobTasks }) => {
+const Day = ({ date, numOfJobTasks, width }) => {
   // each day should subscribe for the data store and get the scheduled jobs and render it!
   const [tasks, setTasks] = useState([{ taskDate: new Date() }]);
   const newDate = new Date();
@@ -36,12 +36,10 @@ const Day = ({ date, numOfJobTasks }) => {
       if (taskDay == dayDay && taskMonth == dayMonth && taskYear == taskYear)
         return <ScheduledJobItem date={taskDate} />;
     });
-    for (let i = 0; i < numOfJobTasks; i++) {
-      tasks.push(<ScheduledJobItem />);
-    }
   };
+  console.log(width, "from width");
   return (
-    <div className={Styles.day}>
+    <div className={Styles.day} style={{ width: `calc(${width}px - 10rem)` }}>
       <DayHeader date={date} />
       <div className={Styles.day__tasks}>{renderJobtask()}</div>
     </div>

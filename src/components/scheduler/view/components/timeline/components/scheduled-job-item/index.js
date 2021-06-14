@@ -7,7 +7,7 @@ const ScheduledJobItem = ({ date }) => {
   const renderEllipsis = () => {
     const ellipsisJsx = [];
     for (let i = 0; i < 3; i++) {
-      ellipsisJsx.push(<i className=' fa fa-ellipsis-v '></i>);
+      ellipsisJsx.push(<i className=' fa fa-ellipsis-v ' key={i}></i>);
     }
     return ellipsisJsx;
   };
