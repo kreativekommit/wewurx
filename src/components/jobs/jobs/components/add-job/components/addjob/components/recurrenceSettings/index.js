@@ -1,4 +1,3 @@
-import { date } from "faker";
 import React from "react";
 import { connect } from "react-redux";
 import { Field, reduxForm } from "redux-form";
@@ -105,16 +104,16 @@ const renderCustomSetup = (customSetUpSelection, onDaySelect) => {
   return (
     <div className={Styles.options__customsetup}>
       <Field
-        name='customSetupSelection'
+        name="customSetupSelection"
         component={renderCustomSetupSelector}
       />
 
       <label>
         Every{" "}
         <Field
-          name='customEveryValue'
-          component='input'
-          type='number'
+          name="customEveryValue"
+          component="input"
+          type="number"
           className={Styles.options__customsetup__everyInput}
         />{" "}
         {customSetUpSelection === "daily"
@@ -182,12 +181,12 @@ const RecurrenceSettings = ({
             ? renderCustomSetup(customSetupSelection, onDaySelect)
             : ""}
         </div>
-        <Field name='endRecurrenceOptions' component={endRecurrenceSelector} />
+        <Field name="endRecurrenceOptions" component={endRecurrenceSelector} />
 
         <div className={Styles.options__currentsetup}>
           <span>Current setup</span>
           <div className={Styles.options__currentsetup__setup}>
-            <i className='fa fa-repeat fa-sm'></i>
+            <i className="fa fa-repeat fa-sm"></i>
             <div>
               <div>
                 {renderSetUpStatus(recurrenceValue, startDate, endDate)}

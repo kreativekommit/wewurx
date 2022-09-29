@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "./memberinfo.module.scss";
 import { Link } from "react-router-dom";
-import faker from "faker";
+import { faker } from "@faker-js/faker";
 
 const MemberInfo = (props) => {
   return (
@@ -29,7 +29,7 @@ const MemberInfo = (props) => {
         React, Typescript, CSS, Node,MongoDB
       </div>
       <Link
-        to='/system/settings/staffmembers/managementuser/1p09183er'
+        to="/system/settings/staffmembers/managementuser/1p09183er"
         className={Styles.bar__button}
       >
         View

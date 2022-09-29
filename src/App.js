@@ -14,11 +14,11 @@ import System from "./pages/system";
 
 function App() {
   return (
-    <div className=''>
+    <div className="">
       <Router>
         <Switch>
-          <Route path='/' exact component={LandingPage} />
-          <Route path='/system' component={System} />
+          <Route path="/" exact component={LandingPage} />
+          <Route path="/system" component={System} />
         </Switch>
       </Router>
 

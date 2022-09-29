@@ -1,7 +1,7 @@
 import React from "react";
 import FilesDirectory from "../../../../../../shared/files/files-directory";
 import Styles from "./files.module.scss";
-import faker from "faker";
+import { faker } from "@faker-js/faker";
 
 const Files = (props) => {
   const filesList = [
